@@ -320,7 +320,7 @@ function show_all_conf()
         eachconf_retrieve
 
         if [ "$is_encrypt" = "nonencrypt" ]; then
-            str="tls+udp不加密"
+            str="tcp+udp不加密"
         elif [ "$is_encrypt" = "encrypt" ]; then
             str="relay+tls加密"
         elif [ "$is_encrypt" = "decrypt" ]; then
